@@ -1,0 +1,46 @@
+# ==============================================
+# NezaMateriales — .gitignore
+# ==============================================
+
+# ----- Entorno y credenciales -----
+.env
+
+# ----- Python -----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# ----- Node / Frontend -----
+node_modules/
+package-lock.json
+
+# ----- IDE -----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ----- OS -----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ----- Logs -----
+*.log
+
+# ----- Alembic -----
+alembic/versions/__pycache__/
+
+# ----- Firebase -----
+.firebase/
+firebase-debug.log
+firebase-debug.*.log
+

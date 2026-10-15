@@ -1,0 +1,34 @@
+# ==============================================
+# NezaMateriales — Dependencias Python
+# ==============================================
+# Justificación de cada paquete en implementation_plan.md
+
+# Framework API (stack definido en AGENTS.md)
+fastapi>=0.110,<1.0
+
+# Servidor ASGI requerido para FastAPI
+uvicorn[standard]>=0.29,<1.0
+
+# ORM obligatorio según AGENTS.md
+sqlalchemy>=2.0,<3.0
+
+# Driver MySQL puro en Python para SQLAlchemy
+pymysql>=1.1,<2.0
+
+# Validación de entrada (convención de AGENTS.md)
+pydantic>=2.0,<3.0
+
+# Carga de .env en desarrollo
+python-dotenv>=1.0,<2.0
+
+# Migraciones de base de datos (stack definido en AGENTS.md)
+alembic>=1.13,<2.0
+
+# Tests unitarios (stack definido en AGENTS.md)
+pytest>=8.0,<9.0
+
+# Rate limiting de endpoints públicos (mitigación de abuso, ver INFORME_SEGURIDAD.md #4)
+slowapi>=0.1.9,<1.0
+
+# Cliente HTTP para llamar a la Graph API de WhatsApp Cloud (bot conversacional)
+httpx>=0.27,<1.0
